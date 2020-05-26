@@ -1,0 +1,2 @@
+O servidor está funcionando com sucesso na porta 5550
+error: Parse error: Account already exists for this username. {"code":202,"stack":"Error: Account already exists for this username.\n    at config.database.find.then.results (/Users/rodrigoalves/Documents/Projetos/Ionic/testev3/Server/node_modules/parse-server/lib/RestWrite.js:589:13)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}

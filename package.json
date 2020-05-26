@@ -8,7 +8,11 @@
     "start": "ionic-app-scripts serve",
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
-    "lint": "ionic-app-scripts lint"
+    "lint": "ionic-app-scripts lint",
+    "lab": "npx ionic serve -l",
+    "up-server": "nohup node Server/server.js &",
+    "dev": "npm run up-server && npm run lab",
+    "install:all": "cd Server/ && npm install && cd ../ && npm install"
   },
   "dependencies": {
     "@angular/animations": "5.2.11",
@@ -32,6 +36,7 @@
   "devDependencies": {
     "@ionic/app-scripts": "3.2.4",
     "@ionic/lab": "3.1.6",
+    "nodemon": "^2.0.4",
     "typescript": "2.6.2"
   },
   "description": "An Ionic project"
