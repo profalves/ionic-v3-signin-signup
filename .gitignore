@@ -16,6 +16,8 @@ $RECYCLE.BIN/
 *.log
 log.txt
 npm-debug.log*
+package-lock.json
+yarn.lock
 
 /.idea
 /.ionic
@@ -27,6 +29,7 @@ npm-debug.log*
 /dist
 /node_modules
 /Server/node_modules
+/Server/yarn.lock
 /platforms
 /plugins
 /www
