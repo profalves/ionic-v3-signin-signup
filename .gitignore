@@ -29,6 +29,7 @@ yarn.lock
 /dist
 /node_modules
 /Server/node_modules
+/Server/package-lock.json
 /Server/yarn.lock
 /platforms
 /plugins
