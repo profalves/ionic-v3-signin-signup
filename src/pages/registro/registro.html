@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Registre-se
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list no-lines>
+    <ion-item>
+      <ion-label floating>Nome</ion-label>
+      <ion-input type="text" [(ngModel)]="userToRegister.name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Usuário</ion-label>
+      <ion-input type="text" [(ngModel)]="userToRegister.username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>e-mail</ion-label>
+      <ion-input type="email" [(ngModel)]="userToRegister.email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Senha</ion-label>
+      <ion-input type="password" [(ngModel)]="userToRegister.password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Confirma Senha</ion-label>
+      <ion-input type="password" [(ngModel)]="checkPassword"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button block ion-button (click)="confirmRegister()">Registre-se</button>
+  <button clear block ion-button (click)="goLogin()">Já é registrado? Inicie sua sessão.</button>
+</ion-content>

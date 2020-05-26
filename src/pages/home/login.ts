@@ -1,19 +1,19 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { RegistroPage } from '../registro/registro';
+import { RegisterPage } from '../register/register';
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-login',
+  templateUrl: 'login.html'
 })
-export class HomePage {
+export class LoginPage {
 
   constructor(public navCtrl: NavController) {
 
   }
 
   register() {
-    this.navCtrl.push(RegistroPage);
+    this.navCtrl.push(RegisterPage)
   }
 
 }
